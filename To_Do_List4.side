@@ -1,0 +1,781 @@
+{
+  "id": "7d74d1ba-9267-44ab-a335-cf11dcaa9b37",
+  "version": "2.0",
+  "name": "To_Do_List",
+  "url": "https://todo-list-login.firebaseapp.com/",
+  "tests": [{
+    "id": "cfff65f1-4b75-4122-8f5a-7adbc3486530",
+    "name": "LogIn",
+    "commands": [{
+      "id": "8bd6787a-3bc9-4e63-9685-af59ef03470a",
+      "comment": "",
+      "command": "open",
+      "target": "https://todo-list-login.firebaseapp.com/#!/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23ac9f59-9ccb-4578-b8b5-6d52e1bd50b7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "736x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b6b87b8-3868-4551-869f-668a83396103",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in with github",
+      "targets": [
+        ["linkText=Sign in with github", "linkText"],
+        ["css=.btn-github", "css:finder"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in with github')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5270",
+      "windowTimeout": 2000
+    }, {
+      "id": "0ca43688-5252-4c39-8db4-b650bd7bcc51",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c9511fb-e249-4224-9b4e-e1ec762edc02",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5270}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1faeba01-fdad-49e8-9fc5-ae53a31f7390",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "BalaUllas"
+    }, {
+      "id": "43b69567-64ae-402b-919e-b057ec8d7227",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "P@ssword1@#123"
+    }, {
+      "id": "508bd4e4-845e-41a2-917d-97f1fc9472e2",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/div/input[12]", "xpath:idRelative"],
+        ["xpath=//input[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "312e81dd-8f90-4a32-931e-fda16170811f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48a68e19-87df-4ce8-a184-bb266f2ce29b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ef1a8324-20e5-4c8e-8e2d-23523b458b6c",
+    "name": "to_do_list",
+    "commands": [{
+      "id": "c3e4d79e-e360-4d07-ab0d-351b989e155f",
+      "comment": "",
+      "command": "open",
+      "target": "https://todo-list-login.firebaseapp.com/#!/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14368e24-4a14-4dfd-8473-9492950b7244",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2797c3db-5555-4f54-a760-0aa0a7114167",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-xs-offset-2 > .form-control",
+      "targets": [
+        ["css=.col-xs-offset-2 > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d5832ac-9201-46d0-b9e0-dfcedfc51f52",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d838920-5429-4dd5-9ef7-29997e97df77",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.ng-not-empty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "55c566d7-b79f-40c5-8e8f-18c6a7b1e746",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e377390-a213-4f1f-9342-50efe97358f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2fdd3c8-45fa-4945-94ec-24ec5eaca37f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "erty"
+    }, {
+      "id": "ef641724-29fe-4f9e-aeb6-87ffc378df53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ae2b174-709c-4c25-a1c3-f7551459671e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3251a8a1-3650-421e-a2aa-bf375a9e3437",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "dfgh"
+    }, {
+      "id": "cbeb0d15-c3c5-48a5-9cdd-6c090e59fb14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "501a16a3-262a-4e88-bb10-cf637cfc0cfd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d81c800-f1db-4dc7-be7f-b59257ca07b1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "336f748e-106c-45e4-be2d-dacaf7984216",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3155c798-cc2e-4028-9345-336d140dbaa9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "asdf"
+    }, {
+      "id": "2fd8623f-bd83-4d20-9c16-b483e2470ed3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d3031b-5000-4ebf-ab3f-cbcf6fe2da34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "980865c2-ad32-4986-a952-048418fb56a9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "kjhg"
+    }, {
+      "id": "3b89c469-d629-4213-bd2c-9a39c1db5674",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7f7fda7-fe14-4221-a700-2c4ed8307b1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13eef4ea-161c-469e-94c5-65d77bef51ab",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44f03675-101b-4c62-98bb-6ed4dcaac82e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d796ebca-c617-4e63-a3ec-515e85e8526b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "yhnm"
+    }, {
+      "id": "40c6d150-8ebd-4cd8-9e5c-5a33ca92e300",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c273bad9-820a-4a35-ac9b-7844749322b7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6961503-9d05-458f-a549-850fbf882d95",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52dd0d5a-277d-48c6-b646-62ae2dd5b0e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28c3734a-5ce3-4bc3-a6e0-0fb34aab2caa",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "oiuhgfd"
+    }, {
+      "id": "48dbc0f4-63ae-475b-b76d-8597d7b6b35d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f00354b4-db47-4650-b133-772af74f7f92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "367ee78a-6742-459e-8dc5-fdcb6c308d95",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "sdfgh"
+    }, {
+      "id": "05acf9ca-8539-49ea-9160-e9dcafeb54fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d94a8a-cdc6-42a0-82bc-5cd06c0b7b70",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "586ef3b1-284a-4c0e-bf9a-bc9ad3bc03fd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24395019-7c32-4102-92fe-6b02fdaf4de4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d82748d-da05-45b2-8d6d-8c287a760d40",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "bgtrd"
+    }, {
+      "id": "a8db5aa9-d107-4541-b81a-fb221395731c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe5e591-1260-46d6-8261-0dfa8c5b029a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1310d662-56c1-4b87-ae28-014974ba57e7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "889999ae-cf41-4edc-897d-fd03e02fa7d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b97e5fe0-8821-449b-b619-90927600be7c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "nhytrdsx"
+    }, {
+      "id": "ad96dbc9-7ea8-4bfb-add2-6973961300e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "81294de7-ff4c-4c40-9285-7bd49e198d29",
+    "name": "sign_out",
+    "commands": [{
+      "id": "eed3089b-5fef-4fd0-9158-db33b3ada2cc",
+      "comment": "",
+      "command": "open",
+      "target": "https://todo-list-login.firebaseapp.com/#!/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b45629e5-10a6-4747-861c-ca8fe29e36e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daa13492-0237-4929-91c9-bf0f57dc4982",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "93b19a80-8666-4c44-8e4f-29cd5e812e8c",
+    "name": "re_login_delete_data",
+    "commands": [{
+      "id": "bd950970-fd0e-4402-b99a-90474b2a7fae",
+      "comment": "",
+      "command": "open",
+      "target": "https://todo-list-login.firebaseapp.com/#!/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd2d2853-7ac0-4fe6-bed2-ebdcdbe77ed7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "736x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3f30210-6284-4664-a247-461e4ced09fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Sign in with github",
+      "targets": [],
+      "value": "Sign in with github"
+    }, {
+      "id": "a1ae659c-401c-4409-a372-9c58a07bc8a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in with github",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4a945db-3e9a-4442-9a30-0f2d11a58531",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Sign in with github",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "f42615e1-cc33-468a-b6d7-e3962eca79c0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "372a2694-3b27-48dd-ac1e-18edc60b726e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3598}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "735d839f-7140-4e73-be7c-7a4d55ec458c",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "BalaUllas"
+    }, {
+      "id": "1841841c-96b5-44f0-bf62-916d921b94ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "P@ssword1@#123"
+    }, {
+      "id": "e3b7a236-2d93-446b-8dee-3131e3dc4969",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[3]/form/div/input[12]", "xpath:idRelative"],
+        ["xpath=//input[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49972f70-73d4-490e-8eea-997579cc0847",
+      "comment": "",
+      "command": "close",
+      "target": "handle=${win3598}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c634334-9eb3-4f85-a6c6-08e36e2c492d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcfebdbd-28bb-4ee5-a876-9457a1de7f41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3a244a3-2f94-4850-bfdd-7d06ef3693be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "860b2e88-82ad-4c38-8312-d2e4b59a19e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43f52dec-584f-4e0a-9ed0-0c0f1f5fa5c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4e883a-9788-456f-95ac-097cc46771d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e81bc81e-0831-4d2d-b477-b50fc50817c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(5) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cbc3897f-87c9-4b10-9210-bb0c107666fb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://todo-list-login.firebaseapp.com/"],
+  "plugins": []
+}
