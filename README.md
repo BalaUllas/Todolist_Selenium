@@ -1,15 +1,14 @@
-# Todolist_Selenium
 This Project is a Selenium IDE Test script to test the web page https://todo-list-login.firebaseapp.com/ with the following actions. This script is generated using the Selenium IDE. With the data in "value" column in the given script; can run all test cases and give a result as "PASS".
 
 To open & check this program, perform the following steps.
 
-Download the attached zip file & extract to a folder
+Download the attached zip file 'To_Do_List4.side '& extract to a folder
 
 Install the Selenium IDE for your browser, if Selenium IDE is not installed.
 
 Click on the Selenium IDE extensions on browser & click on "Open an existing project"
 
-Select the extracted File & execute in the following order to run each test case.
+Select the extracted File '& execute in the following order to run each test case.
 
 LogIn - To confirm the system integrity to prevent unauthorized access using username/password. To test the dynamic values (eg. Username, password etc), change the data in the value column & run the script. This will give a FAILED status, which means, if username or password is wrong, user is prevent from log in.
 
